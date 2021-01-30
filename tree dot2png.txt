@@ -1,0 +1,18 @@
+ 19:08:39
+
+
+ 19:08:51
+Microsoft Windows [版本 10.0.18363.1316]
+(c) 2019 Microsoft Corporation。保留所有权利。
+
+C:\Users\asus>cd desktop
+
+C:\Users\asus\Desktop>cd 决策树
+系统找不到指定的路径。
+
+C:\Users\asus\Desktop>cd machine-learn
+
+C:\Users\asus\Desktop\machine-learn>dot -Tpng tree.dot -o tree.png
+
+C:\Users\asus\Desktop\machine-learn>
+

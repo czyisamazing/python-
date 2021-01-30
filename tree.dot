@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="类黄酮 <= 0.975\ngini = 0.657\nsamples = 124\nvalue = [38, 51, 35]\nclass = 1", fillcolor="#39e58127"] ;
+1 [label="gini = 0.0\nsamples = 31\nvalue = [0, 0, 31]\nclass = 2", fillcolor="#8139e5ff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="脯氨酸 <= 726.5\ngini = 0.53\nsamples = 93\nvalue = [38, 51, 4]\nclass = 1", fillcolor="#39e5813c"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="od280/od315稀释葡萄酒 <= 1.53\ngini = 0.174\nsamples = 53\nvalue = [1, 48, 4]\nclass = 1", fillcolor="#39e581e5"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 4\nvalue = [0, 0, 4]\nclass = 2", fillcolor="#8139e5ff"] ;
+3 -> 4 ;
+5 [label="苹果酸 <= 3.925\ngini = 0.04\nsamples = 49\nvalue = [1, 48, 0]\nclass = 1", fillcolor="#39e581fa"] ;
+3 -> 5 ;
+6 [label="gini = 0.0\nsamples = 47\nvalue = [0, 47, 0]\nclass = 1", fillcolor="#39e581ff"] ;
+5 -> 6 ;
+7 [label="花青素 <= 1.835\ngini = 0.5\nsamples = 2\nvalue = [1, 1, 0]\nclass = 0", fillcolor="#e5813900"] ;
+5 -> 7 ;
+8 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0, 0]\nclass = 0", fillcolor="#e58139ff"] ;
+7 -> 8 ;
+9 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = 1", fillcolor="#39e581ff"] ;
+7 -> 9 ;
+10 [label="颜色强度 <= 3.435\ngini = 0.139\nsamples = 40\nvalue = [37, 3, 0]\nclass = 0", fillcolor="#e58139ea"] ;
+2 -> 10 ;
+11 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3, 0]\nclass = 1", fillcolor="#39e581ff"] ;
+10 -> 11 ;
+12 [label="gini = 0.0\nsamples = 37\nvalue = [37, 0, 0]\nclass = 0", fillcolor="#e58139ff"] ;
+10 -> 12 ;
+}
